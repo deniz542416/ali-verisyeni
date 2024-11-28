@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <h3>2024</h3>
+         <h2>javascript dom</h2>  
+        <h1 class="tag1" id="deger1">baslık 1</h1>
+        <h1 class="tag1" id="deger6">baslık 2</h1>
+        <h1 class="tag1" id="deger12">baslık 3</h1>
+        <h1 class="tag1" id="deger10">baslık 4</h1> 
+        <h1 class="tag1" id="deger12">baslık 5</h1>
+        <h1 class="tag1" id="deger10">baslık 6</h1>  
+
+         <ul style="margin-left: 20px;" class="listitem">
+          <li class="list-item">Yunus</li>
+          <li class="list-item">Belinay</li>
+          <li class="list-item">Ali</li>
+          <li class="list-item">Veli</li>
+        </ul> 
+
+        <script>
+      
+    //   let title=document.createElement('h1')
+    //   title.className='titles'
+    //   title.style.fontSize='24px'               
+    //   title.textContent='yunus'
+    //   console.log( title)
+    //ortalayacak yükseklik ve genişlik arkaplan rengi h3 tagı
+    let title=document.createElement('h3')
+      title.className='titles'
+      title.style.textAlign="center" 
+      title.style.height="30px"
+      title.style.width="100px"
+      title.style.backgroundColor="blue"            
+      title.style.fontSize='24px'               
+      title.textContent='yunus'
+      console.log( title)
+      const title=document.querySelector("h3")
+      let deger=true;
+      function renkdegis(){
+        if(deger){
+          title.style.color="red"
+        }else{
+          title.style.color="blue"
+        }deger=!deger
+      }
+      setInterval(renkdegis,1000)
+     
+//       //başlığın boyutunu 20px ve 40px yap
+
+
+//       const title=document.querySelector("h2")
+//       title.innerText="DOM"
+
+//        const listem=document.getElementsByClassName("list-item")
+
+//        for (let i = 0; i < listem.length; i++) {
+//         listem[i].style.color="red"
+        
+//        }
+
+
+
+//     YEŞİL     20
+//     KIRMIZI   40
+//     MAVİ      60
+//     YEŞİL     20
+//     KIRMIZI   40
+//     MAVİ      60
+//     const titles=document.querySelectorAll("h1")
+//      titles.forEach((title,i) => {
+//       if( i % 3 === 0){
+//         title.style.color='green'
+//       }else if (i % 3 === 1){
+//         title.style.color="red"
+//       }else{
+//         title.style.color="blue"
+//       }
+//      })
+    
+//         const deger=document.getElementById("deger1")
+//         deger.style.color="red"
+//         deger.style.background="blue"
+//         deger.style.with="200px"
+//         deger.style.height="40px"
+//         deger.style.textalign="center"
+        
+       
+//         const deger6=document.getElementById("deger6")
+//         deger6.style.color="red"
+//         deger6.style.background="yellow"
+//         deger6.style.with="200px"
+//         deger6.style.height="40px"
+//         deger6.style.textalign="center"
+        
+        
+//             const deger1=document.getElementById("deger12")
+// deger1.style.color="red"
+// deger1.style.background="orange"
+// deger1.style.with="200px"
+// deger1.style.height="40px"
+// deger1.style.textalign="center"
+
+
+//     const deger2=document.getElementById("deger10")
+// deger2.style.color="red"
+// deger2.style.background="pink"
+// deger2.style.with="200px"
+// deger2.style.height="40px"
+// deger2.style.textalign="center"
+</script>
+
+</body>
+</html>
